@@ -1,0 +1,142 @@
+.new-chat-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 300px;
+  max-height: 500px;
+}
+
+.new-chat-search {
+  width: 100%;
+}
+
+.new-chat-error {
+  padding: 12px;
+  background: #fee;
+  border: 1px solid #fcc;
+  border-radius: 8px;
+  color: #c33;
+  font-size: 0.9rem;
+}
+
+.new-chat-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px;
+  color: #666;
+}
+
+.new-chat-empty,
+.new-chat-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: #999;
+  text-align: center;
+}
+
+.new-chat-users {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.new-chat-users::-webkit-scrollbar {
+  width: 6px;
+}
+
+.new-chat-users::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.new-chat-users::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.new-chat-user-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.new-chat-user-item:hover {
+  background: #f5f5f5;
+  border-color: #667eea;
+}
+
+.new-chat-user-avatar {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.new-chat-user-avatar img,
+.new-chat-user-avatar-placeholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.new-chat-user-avatar-placeholder {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.new-chat-online-indicator {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 12px;
+  height: 12px;
+  background: #44ff44;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.new-chat-user-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.new-chat-user-name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.new-chat-user-email {
+  margin: 4px 0 0 0;
+  font-size: 0.875rem;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.new-chat-creating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
